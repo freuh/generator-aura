@@ -15,7 +15,7 @@ function AppGenerator() {
   this.sourceRoot(path.join(path.dirname(__dirname), 'templates'));
 }
 
-util.inherits(AppGenerator, yeoman.generators.Base);
+util.inherits(AppGenerator, yeoman.generators.NamedBase);
 
 AppGenerator.prototype.someQuestions = function someQuestions() {
   var welcome = separator.yellow +
